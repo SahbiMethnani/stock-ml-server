@@ -114,7 +114,7 @@ class PredictionService:
 prediction_service = PredictionService()
 
 # Endpoints
-@app.route('/health', methods=['GET'])
+@app.route('/', methods=['GET'])
 def health_check():
     return jsonify({
         'status': 'healthy',
